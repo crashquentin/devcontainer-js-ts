@@ -1,0 +1,238 @@
+// Workspace settings are specific to a project and can be shared across developers on a project. Workspace settings override user settings.
+{
+  // Terminal
+  "terminal.integrated.fontFamily": "DroidSansMono Nerd Font",
+
+  // Vim
+  // ###############################
+  "vim.neovimUseConfigFile": false,
+  "vim.vimrc.enable": false,
+  "vim.vimrc.path": "",
+  "vim.shell": "/bin/zsh",
+  "vim.useCtrlKeys": true,
+  "vim.enableNeovim": true,
+  "vim.foldfix": true,
+  "vim.leader": ",,",
+  "vim.showMarksInGutter": true,
+  "vim.surround": true,
+  "vim.whichwrap": "b,s,e",
+  "vim.useSystemClipboard": true,
+  "vim.argumentObjectClosingDelimiters": [")", "]"],
+  "vim.argumentObjectSeparators": [","],
+  "vim.autoindent": true,
+  "vim.camelCaseMotion.enable": false,
+  "vim.easymotionDimBackground": true,
+  "vim.handleKeys": {
+    "<C-d>": true
+  },
+  "vim.easymotionIncSearchForegroundColor": "#7fbf00",
+  "vim.easymotionJumpToAnywhereRegex": "\\b[A-Za-z0-9]|[A-Za-z0-9]\\b|_.|#.|[a-z][A-Z]",
+  "vim.replaceWithRegister": true,
+  "vim.inccommand": "",
+  "vim.ignorecase": true,
+  "vim.matchpairs": "(:),{:},[:]",
+  "vim.timeout": 3000,
+  // Automatically substitute globally
+  "vim.gdefault": true,
+  "vim.overrideCopy": true,
+  "vim.sneak": true,
+  // Copilot
+  // ###############################
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+
+  // Workbench
+  // ###############################
+  "workbench.colorCustomizations": {
+    // "editorLineNumber.foreground": "#00ff00"
+  },
+  "workbench.colorTheme": "GitHub Dark",
+
+  // Editor
+  // ###############################
+  //  - full: The editor will keep the current line's indentation, honor language defined brackets, invoke special onEnterRules defined by languages, and honor indentationRules defined by languages.
+  "editor.autoIndent": "full",
+  // Controls whether the editor should automatically surround selections when typing quotes or brackets.
+  //  - languageDefined: Use language configurations to determine when to automatically surround selections.
+  //  - quotes: Surround with quotes but not brackets.
+  //  - brackets: Surround with brackets but not quotes.
+  //  - never
+  "editor.autoSurround": "languageDefined",
+  // Controls whether bracket pair colorization is enabled or not. Use `workbench.colorCustomizations` to override the bracket highlight colors.
+  "editor.bracketPairColorization.enabled": true,
+  // Configures font ligatures or font features. Can be either a boolean to enable/disable ligatures or a string for the value of the CSS 'font-feature-settings' property.
+  "editor.fontLigatures": false,
+  // Controls the font size in pixels.
+  "editor.fontSize": 14,
+  // Controls the font weight. Accepts "normal" and "bold" keywords or numbers between 1 and 1000.
+  "editor.fontWeight": "normal",
+  // Controls whether the editor should automatically format the pasted content. A formatter must be available and the formatter should be able to format a range in a document.
+  "editor.formatOnPaste": false,
+  // Format on save
+  "editor.formatOnSave": true,
+  // Rulers
+  "editor.rulers": [20, 40, 60],
+  // Controls the strategy for computing folding ranges.
+  //  - auto: Use a language-specific folding strategy if available, else the indentation-based one.
+  //  - indentation: Use the indentation-based folding strategy.
+  "editor.foldingStrategy": "auto",
+  "editor.tabSize": 2,
+  // Controls whether bracket pair guides are enabled or not.
+  //  - true: Enables bracket pair guides.
+  //  - active: Enables bracket pair guides only for the active bracket pair.
+  //  - false: Disables bracket pair guides.
+  "editor.guides.bracketPairs": true,
+  // Controls whether the editor should highlight the active bracket pair.
+  "editor.guides.highlightActiveBracketPair": true,
+  // Controls whether the editor should highlight the active indent guide.
+  //  - true: Highlights the active indent guide.
+  //  - always: Highlights the active indent guide even if bracket guides are highlighted.
+  //  - false: Do not highlight the active indent guide.
+  "editor.guides.highlightActiveIndentation": true,
+  // Controls whether the editor should render indent guides.
+  "editor.guides.indentation": true,
+  // Controls whether the Linux primary clipboard should be supported.
+  "editor.selectionClipboard": true,
+  // Controls whether the editor should highlight matches similar to the selection.
+  "editor.selectionHighlight": true,
+  // Controls whether snippets are shown with other suggestions and how they are sorted.
+  //  - top: Show snippet suggestions on top of other suggestions.
+  //  - bottom: Show snippet suggestions below other suggestions.
+  //  - inline: Show snippets suggestions with other suggestions.
+  //  - none: Do not show snippet suggestions.
+  "editor.snippetSuggestions": "bottom",
+  // Controls whether words are overwritten when accepting completions. Note that this depends on extensions opting into this feature.
+  //  - insert: Insert suggestion without overwriting text right of the cursor.
+  //  - replace: Insert suggestion and overwrite text right of the cursor.
+  "editor.suggest.insertMode": "insert",
+  // Controls whether sorting favors words that appear close to the cursor.
+  "editor.suggest.localityBonus": true,
+  // When enabled IntelliSense shows `enumMember`-suggestions.
+  "editor.suggest.showEnumMembers": true,
+  // When enabled IntelliSense shows `enum`-suggestions.
+  "editor.suggest.showEnums": true,
+  // When enabled IntelliSense shows `event`-suggestions.
+  "editor.suggest.showEvents": true,
+  // When enabled IntelliSense shows `field`-suggestions.
+  "editor.suggest.showFields": true,
+  // When enabled IntelliSense shows `file`-suggestions.
+  "editor.suggest.showFiles": true,
+  // When enabled IntelliSense shows `folder`-suggestions.
+  "editor.suggest.showFolders": true,
+  // When enabled IntelliSense shows `function`-suggestions.
+  "editor.suggest.showFunctions": true,
+  // When enabled IntelliSense shows `class`-suggestions.
+  "editor.suggest.showClasses": true,
+  // When enabled IntelliSense shows `color`-suggestions.
+  "editor.suggest.showColors": true,
+  // When enabled IntelliSense shows `constant`-suggestions.
+  "editor.suggest.showConstants": true,
+  // When enabled IntelliSense shows `constructor`-suggestions.
+  "editor.suggest.showConstructors": true,
+  // Controls whether suggestions should automatically show up when typing trigger characters.
+  "editor.suggestOnTriggerCharacters": true,
+  // Controls how suggestions are pre-selected when showing the suggest list.
+  //  - first: Always select the first suggestion.
+  //  - recentlyUsed: Select recent suggestions unless further typing selects one, e.g. `console.| -> console.log` because `log` has been completed recently.
+  //  - recentlyUsedByPrefix: Select suggestions based on previous prefixes that have completed those suggestions, e.g. `co -> console` and `con -> const`.
+  "editor.suggestSelection": "first",
+  // Enables tab completions.
+  //  - on: Tab complete will insert the best matching suggestion when pressing tab.
+  //  - off: Disable tab completions.
+  //  - onlySnippets: Tab complete snippets when their prefix match. Works best when 'quickSuggestions' aren't enabled.
+  "editor.tabCompletion": "off",
+  // Controls whether completions should be computed based on words in the document.
+  "editor.wordBasedSuggestions": true,
+  // Controls how lines should wrap.
+  //  - off: Lines will never wrap.
+  //  - on: Lines will wrap at the viewport width.
+  //  - wordWrapColumn: Lines will wrap at `editor.wordWrapColumn`.
+  //  - bounded: Lines will wrap at the minimum of viewport and `editor.wordWrapColumn`.
+  "editor.wordWrap": "off",
+  // Controls the wrapping column of the editor when `editor.wordWrap` is `wordWrapColumn` or `bounded`.
+  "editor.wordWrapColumn": 80,
+  // Controls diff decorations in the editor.
+  //  - all: Show the diff decorations in all available locations.
+  //  - gutter: Show the diff decorations only in the editor gutter.
+  //  - overview: Show the diff decorations only in the overview ruler.
+  //  - minimap: Show the diff decorations only in the minimap.
+  //  - none: Do not show the diff decorations.
+  "scm.diffDecorations": "all",
+  // Controls the behavior of Source Control diff gutter decorations.
+  //  - diff: Show the inline diff peek view on click.
+  //  - none: Do nothing.
+  "scm.diffDecorationsGutterAction": "diff",
+
+  // File
+  // ############################
+  // "files.trimTrailingWhitespace": false,
+  // Configure glob patterns for excluding files and folders. For example, the File Explorer decides which files and folders to show or hide based on this setting. Refer to the `search.exclude` setting to define search-specific excludes.
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  // Configure paths or glob patterns to exclude from file watching.
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/.hg/store/**": true
+  },
+  // Configure extra paths to watch for changes inside the workspace.
+  "files.watcherInclude": [],
+
+  // Explorer
+  // ############################
+  // Controls whether entries in .gitignore should be parsed and excluded from the Explorer.
+  "explorer.excludeGitIgnore": true,
+  // Controls whether the Explorer should expand multi-root workspaces containing only one folder during initilization
+  "explorer.expandSingleFolderWorkspaces": true,
+  // Controls nesting of files in the Explorer. Each __Item__ represents a parent pattern and may contain a single `*` character that matches any string. Each __Value__ represents a comma separated list of the child patterns that should be shown nested under a given parent. Child patterns may contain several special tokens:
+  // - `${capture}`: Matches the resolved value of the `*` from the parent pattern
+  // - `${basename}`: Matches the parent file's basename, the `file` in `file.ts`
+  // - `${extname}`: Matches the parent file's extension, the `ts` in `file.ts`
+  // - `${dirname}`: Matches the parent file's directory name, the `src` in `src/file.ts`
+  // - `*`:  Matches any string, may only be used once per child pattern
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml"
+  },
+
+  // Seach
+  // ############################
+  // Controls the positioning of the actionbar on rows in the search view.
+  //  - auto: Position the actionbar to the right when the search view is narrow, and immediately after the content when the search view is wide.
+  //  - right: Always position the actionbar to the right.
+  "search.actionsPosition": "right",
+  // Controls whether the search results will be collapsed or expanded.
+  //  - auto: Files with less than 10 results are expanded. Others are collapsed.
+  //  - alwaysCollapse
+  //  - alwaysExpand
+  "search.collapseResults": "alwaysExpand",
+  // Configure glob patterns for excluding files and folders in fulltext searches and quick open. Inherits all glob patterns from the `files.exclude` setting.
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.git": true,
+    "**/bower_components": true,
+    "**/*.code-search": true
+  },
+  // Controls whether the search view should read or modify the shared find clipboard on macOS.
+  "search.globalFindClipboard": false,
+  // Controls where new `Search: Find in Files` and `Find in Folder` operations occur: either in the search view, or in a search editor.
+  //  - view: Search in the search view, either in the panel or side bars.
+  //  - reuseEditor: Search in an existing search editor if present, otherwise in a new search editor.
+  //  - newEditor: Search in a new search editor.
+  "search.mode": "view"
+}

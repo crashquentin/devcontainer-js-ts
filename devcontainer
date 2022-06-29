@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -e
+
+docker_scripts="$(pwd)/scripts/docker"
+
+# Router
+if [[ "$1" == "docker" ]]; then
+    shift # positional parameters are shifted to the left
+    bash "$docker_scripts/main.sh" "$@" # Run main script with args
+elif [[ "$1" == "build" ]] && [[ "$2" == "" ]]; then
+    bash "$docker_scripts/main.sh" build all # Build all docker images
+elif [[ "$1" == "build" ]] && [[ "$2" == "dev" ]]; then
+    bash "$docker_scripts/main.sh" build dev # Build all docker images
+elif [[ "$1" == "root" ]]; then
+    bash "$docker_scripts/main.sh" run base # Runs the base container
+elif [[ "$1" == "dev" ]]; then
+    bash "$docker_scripts/main.sh" run dev # Runs the dev container
+else
+    echo "Usage: $0 [docker|rsync]"
+    exit 1
+fi

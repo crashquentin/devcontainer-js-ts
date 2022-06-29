@@ -1,0 +1,6 @@
+zsh_history
+.config/zsh/history/zsh_history
+*.backup
+.DS_Store
+/test
+/.github
